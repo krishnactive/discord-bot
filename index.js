@@ -11,6 +11,14 @@ const client = new Client({
 
 client.on('messageCreate', (message)  => {
     if(message.author.bot)return;
+    //to do replying with short ID 
+    // todo integrating AI/chat gpt to reply in chat/discord bot
+    if(message.content.startsWith('create')){
+        const url = message.content.split('create')[1];
+        return message.reply({
+            content: "Generating Short ID for "+ url,
+        });
+    }
     message.reply({
         content: "Hi From Bot"
     })
@@ -23,5 +31,5 @@ client.on('interactionCreate', interaction=>{
 })
 
 client.login(
-    "Token required"
+    "token-required"
 )

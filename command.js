@@ -2,8 +2,8 @@ const { REST, Routes } = require('discord.js');
 
 const commands = [
     {
-      name: 'ping',
-      description: 'Replies with Pong!',
+      name: 'create',
+      description: 'Creates a new short URL',
     },
   ];
 
@@ -14,7 +14,7 @@ const commands = [
     try {
         console.log('Started refreshing application (/) commands.');
       
-        await rest.put(Routes.applicationCommands("ID-required"), { 
+        await rest.put(Routes.applicationCommands("ID"), { 
             body: commands 
         });
         console.log('Successfully reloaded application (/) commands.');
