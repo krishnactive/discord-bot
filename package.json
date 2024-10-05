@@ -1,0 +1,22 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishnactive/discord-bot.git"
+  },
+  "author": "Krishna kant Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krishnactive/discord-bot/issues"
+  },
+  "homepage": "https://github.com/krishnactive/discord-bot#readme",
+  "description": "",
+  "dependencies": {
+    "discord.js": "^14.16.3"
+  }
+}
